@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WeyNova Technologies | Cyber Security & Software Engineering</title>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',sans-serif;background:#050a14;color:#e2e8f0;overflow-x:hidden}
+h1,h2,h3{font-family:'Orbitron',sans-serif}
+.header{display:flex;justify-content:space-between;align-items:center;padding:18px 6%;background:rgba(5,10,20,0.9);position:sticky;top:0;backdrop-filter:blur(10px);z-index:100;border-bottom:1px solid #1e3a5f}
+.logo{color:#00D2FF;font-size:22px;letter-spacing:1px} .logo span{color:white}
+.btn{padding:10px 22px;border-radius:25px;border:none;font-weight:600;cursor:pointer}
+.btn-blue{background:#00D2FF;color:#050a14}
+.hero{padding:90px 6% 60px;display:grid;grid-template-columns:1.1fr 0.9fr;gap:30px;align-items:center}
+.hero h1{font-size:48px;line-height:1.1;color:white} .hero h1 span{color:#00D2FF}
+.hero p{margin:18px 0;color:#94a3b8;font-size:17px;line-height:1.6}
+.badges span{border:1px solid #1e3a5f;padding:6px 12px;border-radius:20px;margin-right:8px;font-size:12px;color:#00D2FF}
+.card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;margin-top:25px}
+.card{background:linear-gradient(180deg,#0f1c33,#0a1222);border:1px solid #1e3a5f;padding:24px;border-radius:16px;transition:0.3s}
+.card:hover{border-color:#00D2FF;transform:translateY(-5px)}
+.card h3{margin:12px 0;color:white}
+.section{padding:60px 6%}
+.icon{font-size:32px}
+.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:15px;margin-top:30px}
+.stat{background:#0a1930;padding:20px;border-radius:12px;text-align:center;border:1px solid #1e3a5f}
+.stat b{font-size:28px;color:#00D2FF;display:block}
+.footer{background:#02060f;padding:40px 6%;border-top:1px solid #1e3a5f;text-align:center;color:#64748b;font-size:14px}
+@media(max-width:800px){.hero{grid-template-columns:1fr}.hero h1{font-size:32px}.stats{grid-template-columns:1fr 1fr}}
+</style>
+</head>
+<body>
+
+<div class="header">
+<div class="logo">WeyNova<span> Technologies</span></div>
+<div><a href="#contact"><button class="btn btn-blue">Get Protected</button></a></div>
+</div>
+
+<div class="hero">
+<div>
+<div class="badges"><span>● ISO 27001 READY</span><span>● SECURE BY DESIGN</span></div>
+<h1>We Secure<br><span>What You Build.</span></h1>
+<p>WeyNova Technologies is a Nigerian Cyber Security & Software Engineering company. We build secure software, protect critical infrastructure, and provide maritime & enterprise security solutions. Founded by <b style="color:white">Ibrahim Hadejia</b>.</p>
+<div style="margin-top:20px">
+<button class="btn btn-blue" onclick="document.getElementById('services').scrollIntoView()">Our Services →</button>
+<button class="btn" style="background:transparent;border:1px solid #1e3a5f;color:white;margin-left:10px">AquaTrack Product</button>
+</div>
+<div class="stats">
+<div class="stat"><b>100%</b>Secure Code</div>
+<div class="stat"><b>24/7</b>SOC Monitoring</div>
+<div class="stat"><b>50+</b>Projects</div>
+<div class="stat"><b>99.9%</b>Uptime</div>
+</div>
+</div>
+<div>
+<div class="card" style="text-align:center;padding:30px">
+<div class="icon">🛡️</div>
+<h3 style="font-size:22px">Threat Blocked</h3>
+<p style="color:#00D2FF">LIVE SECURITY DASHBOARD</p>
+<div style="background:#050a14;border-radius:10px;padding:12px;margin-top:15px;text-align:left;font-family:monospace;font-size:12px;color:#00ff9d">
+> scanning network...<br>> 0 critical vuln.<br>> firewall: ACTIVE<br>> encryption: AES-256<br>> status: SECURED ✓
+</div>
+</div>
+</div>
+</div>
+
+<div id="services" class="section">
+<h2 style="text-align:center;font-size:32px">What We Do</h2>
+<p style="text-align:center;color:#94a3b8;margin-top:8px">Two core pillars: Cyber Security & Software Engineering</p>
+
+<div class="card-grid">
+<div class="card">
+<div class="icon">🔐</div>
+<h3>Cyber Security</h3>
+<p style="color:#94a3b8">We protect your business from hackers.</p>
+<ul style="margin-top:10px;color:#cbd5e1;line-height:1.8;font-size:14px">
+<li>Penetration Testing & VAPT</li>
+<li>SOC & 24/7 Threat Monitoring</li>
+<li>Maritime Cyber Security (AquaTrack)</li>
+<li>Cloud Security (AWS, Azure)</li>
+<li>Security Awareness Training</li>
+</ul>
+</div>
+
+<div class="card">
+<div class="icon">💻</div>
+<h3>Software Engineering</h3>
+<p style="color:#94a3b8">We build secure, scalable software.</p>
+<ul style="margin-top:10px;color:#cbd5e1;line-height:1.8;font-size:14px">
+<li>Custom Web & Mobile Apps</li>
+<li>GPS & IoT Tracking Systems</li>
+<li>Fintech & Secure APIs</li>
+<li>AI-Powered Solutions</li>
+<li>Enterprise Software (Netlify/Vercel)</li>
+</ul>
+</div>
+
+<div class="card" style="border-color:#00D2FF">
+<div class="icon">🚢</div>
+<h3>Flagship Product: AquaTrack</h3>
+<p style="color:#94a3b8">Our award-winning maritime safety platform.</p>
+<ul style="margin-top:10px;color:#cbd5e1;line-height:1.8;font-size:14px">
+<li>Live Vessel Tracking + Search</li>
+<li>SOS Button with Real GPS</li>
+<li>WhatsApp + Email Alert to Rescue</li>
+<li>Offline-First for Rural Fishermen</li>
+</ul>
+<button class="btn btn-blue" style="margin-top:15px;width:100%">View Demo</button>
+</div>
+</div>
+</div>
+
+<div class="section" style="background:#0a1930">
+<h2>Why WeyNova?</h2>
+<div class="card-grid" style="margin-top:20px">
+<div class="card"><h3>🇳🇬 Local + Global</h3><p style="color:#94a3b8">Built in Nigeria for Africa, with international security standards.</p></div>
+<div class="card"><h3>⚡ Secure by Design</h3><p style="color:#94a3b8">We don't add security later. We build it from the first line of code.</p></div>
+<div class="card"><h3>🤝 Founder Led</h3><p style="color:#94a3b8">Led by Ibrahim Hadejia - Innovator from Hadejia, Jigawa. Passionate about safety & tech.</p></div>
+</div>
+</div>
+
+<div id="contact" class="section" style="text-align:center">
+<h2>Ready to Secure Your Business?</h2>
+<p style="color:#94a3b8;margin:10px 0 25px">Let's talk. We respond in 2 hours.</p>
+<div style="display:inline-block;background:#0f1c33;padding:25px;border-radius:14px;border:1px solid #1e3a5f;text-align:left;min-width:300px">
+<p>📞 <b>WhatsApp / Call:</b> 07036271509</p><br>
+<p>✉️ <b>Email:</b> weynova.tech@gmail.com</p><br>
+<p>📍 <b>Location:</b> Hadejia, Jigawa | Abuja | Lagos</p><br>
+<p>🌐 <b>Product:</b> aquatrack.weynova.tech</p>
+<br>
+<a href="https://wa.me/2347036271509?text=Hello%20WeyNova%20Technologies%2C%20I%20need%20cyber%20security%20service" target="_blank"><button class="btn btn-blue" style="width:100%">💬 Chat on WhatsApp</button></a>
+</div>
+</div>
+
+<div class="footer">
+<b style="color:white">WeyNova Technologies</b> © 2026 - Founded by Ibrahim Hadejia<br>
+Cyber Security | Software Engineering | Maritime Tech | Jigawa, Nigeria<br>
+<i>"We Secure What You Build"</i>
+</div>
+
+</body>
+</html>
